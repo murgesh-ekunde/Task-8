@@ -5,47 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
     <style>
         body{
             background-color: bisque;
             text-align: center;
-            margin-left: 25%;
-            margin-right: 25%;
+            margin-left: 400px;
+            margin-right: 500px;
             padding: 5%;
         }
-        .br {
+        .container {
             background-color: aliceblue;
             border: 5px black; 
             border-style: solid;
         }
-       
+        form{
+            display:flex;
+            flex-direction: column;
+        }
+        .name{
+           display: flex;
+           flex-direction: row; 
+           justify-content:flex-start;
+           padding-left: 20px;
+           padding-bottom: 5px;
+        }
+        .adress{
+            display: flex;
+           flex-direction: row; 
+           justify-content:flex-start;
+           padding-left: 20px;
+           padding-bottom: 5px;
+        }
+        .city{
+           display: flex;
+           flex-direction: row; 
+           justify-content:flex-start;
+           padding-left: 20px;
+           padding-bottom: 5px;
+        }
+        .name input{
+            display: inline-block;
+            width:200px;
+            border: none;
+            border-bottom: 2px black solid;
+            outline: none;
+            background: none;
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+        .adress input{
+            display: inline-block;
+            width:420px;
+            border: none;
+            border-bottom: 2px black solid;
+            outline: none;
+            background: none;
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+        .city input{
+            display: inline-block;
+            width:130px;
+            border: none;
+            border-bottom: 2px black solid;
+            outline: none;
+            background: none;
+            font-family: 'Qwitcher Grypen', cursive;
+        }
+        label{
+            display: inline-block;
+            padding-right: 10px;
+            text-align: left;
+        }
+        .bottom{
+            text-align: left;
+           padding-left: 20px;
+           padding-bottom: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="br" >
+    <div class="container" >
     <div>
         <h2 style="background-color: red; color: aliceblue; margin:2.5%">Yes! I want to subscribe to <b><i>Mag-O-Zine</i></b></h2>
     </div>
-        <div style="text-align: center;">
-           <input type="text" style="width: 30%;"> &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input  type="text" style="width: 30%;"> <br>
-           <div style="text-align:left;"> &emsp;&emsp; First Name  &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Last Name</div>  <br>
-           <input type="text" style="width: 89%;"> <br>
-           <div style="text-align:left ;">&ensp;&emsp;&ensp;Adress</div><br>
-           <input type="text" style="width: 22%;">&emsp;&emsp;&emsp;&emsp;<input type="text" style="width: 25%;">&emsp;&emsp;&emsp;&emsp;<input type="text" style="width: 20%;"><br>
-           <div style="text-align:left;">&emsp;&emsp;City &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; State &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &ensp; Zip</div><br>
-        </div> 
-        <div style="text-align:left ;">
-            <strong>&emsp;&ensp;Subscribe for: 
+    <form>
+        <div class="name">
+            <label> <input type="text" value="Joe" /><br>First Name</label>
+            <label> <input type="text" value="Schmeggejji"><br>Last Name</label>
+        </div>
+        <div class="adress">
+            <label><input type="text" value="1001 Washington Street"> <br> Adress</label>
+        </div>
+        <div class="city">
+            <label><input type="text" value="Joe"><br> city:</label>
+            <label><input type="text" value="Schmeggejji"><br> State: </label>
+            <label><input type="number" value="Schmeggejji"><br> Zip: </label>
+        </div>
+       <div class="bottom">
+            <strong>Subscribe for: 
             <input type="checkbox"> 1 Year ($19.95)  <input type="checkbox"> 2 Year ($35.00) <br>
-            &emsp;&ensp;Send me more information about: <br>
-            &emsp;&ensp;<input type="checkbox"> Computer Zine <br> 
-            &emsp;&ensp;<input type="checkbox"> Fishing Zine <br>
-            &emsp;&ensp;<input type="checkbox"> Cat O Zine <br><br>
+            Send me more information about: <br>
+            <input type="checkbox"> Computer Zine <br> 
+            <input type="checkbox"> Fishing Zine <br>
+            <input type="checkbox"> Cat O Zine <br>
         </strong>
         </div>  
-      
-        
-    
+    </form>
+    </div>
 </body>
 </html>
